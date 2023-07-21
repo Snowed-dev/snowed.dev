@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>snowed.dev</h1>
+        <div class="pythonexp">
+            <h2>PYTHON | HTML | CSS | JAVASCRIPT | JAVA </h2>
+        </div>
+    </div>
+    <script>
+        const pythonExp = document.querySelector('.pythonexp h2');
+        const h1 = document.querySelector('h1');
+
+        h1.addEventListener('animationend', () => {
+            pythonExp.style.opacity = '1'; // Set the opacity to 1 after h1 animation ends
+            pythonExp.classList.add('fadeIn');
+        });
+    </script>
 </body>
 </html>

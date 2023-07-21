@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: rgb(235, 37, 124);
+    background: linear-gradient(342deg, rgba(235, 37, 124, 1) 1%, rgba(255, 76, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 150px;
+}
+
+h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.pythonexp {
+    align-self: flex-start; /* This aligns .pythonexp to the left */
+}
+
+.pythonexp h2 {
+    font-family: Arial;
+    font-size: 60px;
+    opacity: 0; /* Set opacity to 0 initially */
+}
+
+.fadeIn {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
