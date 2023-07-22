@@ -7,21 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <h1>snowed.dev</h1>
         <div class="pythonexp">
-            <h2>PYTHON | HTML | CSS | JAVASCRIPT | JAVA </h2>
+            <h2>PYTHON | HTML | CSS | JAVASCRIPT | JAVA</h2>
         </div>
+        <button class="click-button">Click Me</button>
     </div>
     <script>
         const pythonExp = document.querySelector('.pythonexp h2');
         const h1 = document.querySelector('h1');
+        const button = document.querySelector('.click-button');
 
         h1.addEventListener('animationend', () => {
-            pythonExp.style.opacity = '1'; // Set the opacity to 1 after h1 animation ends
+            pythonExp.style.opacity = '1';
             pythonExp.classList.add('fadeIn');
+            button.style.display = 'block'; // Show the button after h1 animation is completed
+            button.classList.add('fadeIn'); // Add fadeIn class to the button
         });
     </script>
 </body>
 </html>
+
