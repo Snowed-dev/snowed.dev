@@ -8,3 +8,8 @@ h1.addEventListener('animationend', () => {
     button.style.display = 'block';
     button.classList.add('fadeIn');
 });
+
+
+button.addEventListener('click', () => {
+    window.location.href = 'prev_work.html'; // Redirect to newpage.html on button click
+});
