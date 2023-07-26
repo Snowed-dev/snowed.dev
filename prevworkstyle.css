@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align container content to the top */
+}
+
+body {
+    background: rgb(235, 37, 124);
+    background: linear-gradient(342deg, rgba(235, 37, 124, 1) 1%, rgba(255, 76, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 100px;
+}
